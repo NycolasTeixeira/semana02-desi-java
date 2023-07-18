@@ -8,6 +8,7 @@ package semana02.desi.java;
 import java.util.Calendar;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
+import views.PrimeiraInterface;
 
 /**
  *
@@ -20,11 +21,11 @@ public class Semana02DesiJava {
      */
     public static void main(String[] args) {
 
-        metodoJoption();
-
+       // metodoJoption();
+        new PrimeiraInterface();
     }
 
-    public static void metodoJoption() {
+ /*   public static void metodoJoption() {
         String nome = JOptionPane.showInputDialog("Hello World");
         int idade = Integer.parseInt(JOptionPane.showInputDialog(null, "Qual sua idade: ", "Idade", JOptionPane.INFORMATION_MESSAGE));
 
