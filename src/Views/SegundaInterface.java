@@ -14,9 +14,11 @@ import javax.swing.Timer;
  * @author nycolas_teixeira
  */
 public class SegundaInterface extends javax.swing.JFrame {
+
     private int tempoRestante;
     private int tempoInicial = 25;
     private Timer timer;
+
     /**
      * Creates new form SegundaInterface
      */
@@ -80,15 +82,23 @@ public class SegundaInterface extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
+
         tempoRestante = tempoInicial * 60; // tempo inicial
-        
+
         timer = new Timer(1000, (ActionEvent e) -> {
+            atualizaTempo();
+
         });
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
-   
+    private void atualizaTempo() {
+    int minutos = tempoRestante / 60;
+    int segundos = tempoRestante % 60;
+    
+    
+    String tempo = String.format("%02d:%02d", minutos, segundos);
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
