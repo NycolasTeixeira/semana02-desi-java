@@ -9,6 +9,7 @@ import java.util.Calendar;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 import views.PrimeiraInterface;
+import Views.SegundaInterface;
 
 /**
  *
@@ -22,7 +23,8 @@ public class Semana02DesiJava {
     public static void main(String[] args) {
 
        // metodoJoption();
-        new PrimeiraInterface();
+       new SegundaInterface().setVisible(true);
+       
     }
 
  /*   public static void metodoJoption() {
@@ -79,4 +81,5 @@ public class Semana02DesiJava {
         }
 
     }
+*/
 }
